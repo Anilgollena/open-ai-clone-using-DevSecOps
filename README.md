@@ -1,4 +1,5 @@
 #Open Source Project: DevSecOps for OpenAI Chatbot UI Deployment | DevSecOps
+
 The open-source AI chat app for everyone.
 ![image](https://github.com/user-attachments/assets/2e073d94-0e49-4e43-a8b0-72fb4ee3f22b)
 
