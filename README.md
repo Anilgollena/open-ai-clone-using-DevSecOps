@@ -1,6 +1,6 @@
 
 
-#Open Source Project: DevSecOps for OpenAI Chatbot UI Deployment | DevSecOps
+# Open Source Project: DevSecOps for OpenAI Chatbot UI Deployment | DevSecOps
 
 The open-source AI chat app for everyone.
 ![image](https://github.com/user-attachments/assets/2e073d94-0e49-4e43-a8b0-72fb4ee3f22b)
@@ -23,7 +23,7 @@ To deploy ChatBOT on our EKS, we’re leveraging Jenkins as our CICD (Continuous
 now here are the few steps to deploy open AI using devsecops
 Launch an Ubuntu(22.04) T2 Large Instance
 Create IAM role
-Install Jenkins, Docker and Trivy
+# Install Jenkins, Docker and Trivy
 #!/bin/bash
 sudo apt update -y
 wget -O - https://packages.adoptium.net/artifactory/api/gpg/key/public | tee /etc/apt/keyrings/adoptium.asc
@@ -48,7 +48,7 @@ sudo chmod 777 /var/run/docker.sock
 
 docker run -d --name sonar -p 9000:9000 sonarqube:lts-community
 
-#Install Trivy, Kubectl,Terraform
+# Install Trivy, Kubectl,Terraform
 sudo apt-get install wget apt-transport-https gnupg lsb-release -y
 wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | gpg --dearmor | sudo tee /usr/share/keyrings/trivy.gpg &gt; /dev/null
 echo "deb [signed-by=/usr/share/keyrings/trivy.gpg] https://aquasecurity.github.io/trivy-repo/deb $(lsb_release -sc) main" | sudo tee -a /etc/apt/sources.list.d/trivy.list
@@ -110,7 +110,16 @@ using jenkins configure the tools, system files, credenditals
 run the pipeline script
 
 copy the public ip:3000
+
+sonarqube test cases passed
+
  
+![Screenshot 2025-03-08 182108](https://github.com/user-attachments/assets/4ef24421-3427-45fa-9e78-dc24623fff7b)
+
+chatgpt image uploaded into the dockerhub registry
+
+![Screenshot 2025-03-08 182224](https://github.com/user-attachments/assets/78d45f5b-c72a-4892-83cf-cdfbb54be3de)
+
 
 
 
